@@ -3,6 +3,72 @@ Unreal Engine 5 (UE5) Simple Save/Load Subsystem derived from Game Instance.
 
 **Welcome to my simple Save and Load Game System built specifically for Unreal Engine.**
 
+**Installation Instructions**
+1. Download the .ZIP file.
+2. Extract.
+3. Copy the folder 'SaveLoadGameSystem'.
+4. Open Source folder within project of choice (Documents/Unreal Projects/MyProjectOfChoice).
+5. Paste 'SaveLoadGameSystem'.
+6. Open 'MyProjectOfChoice.sln' (the Visual Studio file).
+7. Navigate to 'ProjectOfChoice.uproject', found within 'ProjectOfChoice' on the right tab.
+8. Add the following after "Modules":
+   
+    }, <- add a comma at the end of the first module
+		{
+			"Name": "SaveLoadGameSystem",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+
+8.1 In case you're lost, copy and paste this and change the values indicated:
+
+{
+	"FileVersion": 3,
+	"EngineAssociation": "Delete this entry and type the number of the UE version you're using (5.6 or 5.7 or 5.4, etc.)",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Delete this entry and type your ProjectOfChoice",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "SaveLoadGameSystem",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+
+	],
+	"Plugins": [
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		}
+	]
+}
+
+10. Save and close.
+11. Right-click 'ProjectOfChoice.uproject' file, right beneath the .sln file.
+12. Choose 'Generate Visual Studio project files.
+13. Wait.
+14. Open the .sln file again and try to compile the project (recommended to wait a little while to let IntelliSense do its thing).
+15. If compilation was successful, all is done and you can proceed, otherwise, restart from the beginning and make sure that all steps are complete.
+16. Go back to the extract SaveLoadGameSystem and open 'Content' folder.
+17. Copy 'Level' and 'Widgets' folder.
+18. Go back to 'ProjectOfChoice' folder and open 'Content'.
+16. Paste 'Level' and 'Widgets' folders there.
+17. Open the project as you normally would.
+18. Check if the assets are within the pasted folders (Level and Widgets).
+19. Repeat step 10. in case the assets are not present.
+20. If everything else runs flawlessly, all is done.
+21. Congratulations on installing these files. You are free to use them now and adapt it to your likings.
+
+**About this SaveLoadGameSystem:**
+
 This version is safe to use with Unreal Engine version 5.6.1, but you are free to experiment with other versions.
 
 If you are going to use these files directly, make sure that you keep their names intact, as there are some direct references within the GameMode constructor (**DefaultPlayerController** and **ExtraDefaultPawn**).
