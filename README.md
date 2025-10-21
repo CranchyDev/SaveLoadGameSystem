@@ -1,4 +1,4 @@
-<img width="726" height="123" alt="image" src="https://github.com/user-attachments/assets/f141cb97-42fd-40cd-a671-bb04ce0a0e25" /># SaveLoadGameSystem
+# SaveLoadGameSystem
 Unreal Engine 5 (UE5) Simple Save/Load Subsystem derived from Game Instance.
 
 **Welcome to my simple Save and Load Game System built specifically for Unreal Engine.**
