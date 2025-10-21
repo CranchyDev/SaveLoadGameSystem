@@ -1,4 +1,4 @@
-# SaveLoadGameSystem
+<img width="726" height="123" alt="image" src="https://github.com/user-attachments/assets/f141cb97-42fd-40cd-a671-bb04ce0a0e25" /># SaveLoadGameSystem
 Unreal Engine 5 (UE5) Simple Save/Load Subsystem derived from Game Instance.
 
 **Welcome to my simple Save and Load Game System built specifically for Unreal Engine.**
@@ -6,66 +6,46 @@ Unreal Engine 5 (UE5) Simple Save/Load Subsystem derived from Game Instance.
 **Installation Instructions**
 1. Download the .ZIP file.
 2. Extract.
-3. Copy the folder 'SaveLoadGameSystem'.
-4. Open Source folder within project of choice (Documents/Unreal Projects/MyProjectOfChoice).
-5. Paste 'SaveLoadGameSystem'.
-6. Open 'MyProjectOfChoice.sln' (the Visual Studio file).
-7. Navigate to 'ProjectOfChoice.uproject', found within 'ProjectOfChoice' on the right tab.
-8. Add the following after "Modules":
-   
-    }, <- add a comma at the end of the first module
+3. Copy the folder **'SaveLoadGameSystem'**.
+4. Open Source folder within project of choice **(Documents/Unreal Projects/MyProject)**.
+5. Paste **'SaveLoadGameSystem'**.
+6. Open **'MyProject.sln'** (the Visual Studio file).
+7. Navigate to **'MyProject.uproject'**, found within 'MyProject' on the right tab.
+
+ <img width="383" height="603" alt="image" src="https://github.com/user-attachments/assets/ee9524e5-6a29-4e43-96a5-276ce5c6e481" />
+
+8. Add the following within **"Modules"**:
+
+<img width="635" height="518" alt="image" src="https://github.com/user-attachments/assets/8538ffe1-6ca6-4922-85b7-2885db8e225f" />
+
+A - Add a comma after the }
+
+B - What to add:
+
 		{
 			"Name": "SaveLoadGameSystem",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
 		}
 
-8.1 In case you're lost, copy and paste this and change the values indicated:
+9. Save and close.
+10. Right-click **'MyProject.uproject'** file, right beneath the .sln file.
+11. Choose **'Generate Visual Studio project files'**.
 
-{
-	"FileVersion": 3,
-	"EngineAssociation": "Delete this entry and type the number of the UE version you're using (5.6 or 5.7 or 5.4, etc.)",
-	"Category": "",
-	"Description": "",
-	"Modules": [
-		{
-			"Name": "Delete this entry and type your ProjectOfChoice",
-			"Type": "Runtime",
-			"LoadingPhase": "Default"
-		},
-		{
-			"Name": "SaveLoadGameSystem",
-			"Type": "Runtime",
-			"LoadingPhase": "Default"
-		}
+<img width="726" height="123" alt="image" src="https://github.com/user-attachments/assets/1943868c-da63-459b-9b8e-53128febcad6" />
 
-	],
-	"Plugins": [
-		{
-			"Name": "ModelingToolsEditorMode",
-			"Enabled": true,
-			"TargetAllowList": [
-				"Editor"
-			]
-		}
-	]
-}
-
-10. Save and close.
-11. Right-click 'ProjectOfChoice.uproject' file, right beneath the .sln file.
-12. Choose 'Generate Visual Studio project files.
-13. Wait.
-14. Open the .sln file again and try to compile the project (recommended to wait a little while to let IntelliSense do its thing).
-15. If compilation was successful, all is done and you can proceed, otherwise, restart from the beginning and make sure that all steps are complete.
-16. Go back to the extract SaveLoadGameSystem and open 'Content' folder.
-17. Copy 'Level' and 'Widgets' folder.
-18. Go back to 'ProjectOfChoice' folder and open 'Content'.
-16. Paste 'Level' and 'Widgets' folders there.
-17. Open the project as you normally would.
-18. Check if the assets are within the pasted folders (Level and Widgets).
-19. Repeat step 10. in case the assets are not present.
-20. If everything else runs flawlessly, all is done.
-21. Congratulations on installing these files. You are free to use them now and adapt it to your likings.
+12. **Wait.**
+13. Open the .sln file again and try to compile the project (recommended to wait a little while to let IntelliSense do its thing).
+14. If compilation was successful, all is done and you can proceed, otherwise, restart from the beginning and make sure that all steps are complete.
+15. Go back to the extracted **SaveLoadGameSystem** folder and open **'Content'** folder.
+16. Copy **'Level'** and **'Widgets'** folder.
+17. Go back to **'MyProject'** folder and open **'Content'**.
+18. Paste **'Level'** and **'Widgets'** folders there.
+19. Open the project as you normally would.
+20. Check if the assets are within the pasted folders **(Level and Widgets)**.
+21. Repeat **step 10.** in case the assets are not present.
+22. If everything else runs flawlessly, all is done.
+23. Congratulations on installing these files. You are free to use them now and adapt it to your likings.
 
 **About this SaveLoadGameSystem:**
 
